@@ -5,7 +5,7 @@ const Product = require("../models/product.model");
 const AppError = require("../utils/AppError");
 const asyncHandler = require("../utils/asyncHandler");
 
-const VALID_STATUSES = ["pending", "processing", "shipped", "delivered", "cancelled"];
+const VALID_STATUSES = ["pending", "confirmed", "shipped", "delivered", "cancelled"];
 
 // @desc    Checkout: create an order from the current cart
 // @route   POST /api/orders
