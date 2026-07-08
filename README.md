@@ -1,5 +1,7 @@
 # E-Commerce API
 
+**Repository:** https://github.com/abdalrahmanelmallah/ecommerce-api
+
 A complete E-Commerce Backend API built from scratch using the **MVC (Model-View-Controller)** pattern. It provides everything needed to power an online store's backend: category and product management, a shopping cart, and an order checkout flow.
 
 ## Features
@@ -33,7 +35,7 @@ A complete E-Commerce Backend API built from scratch using the **MVC (Model-View
 
 ```bash
 # 1. Clone the repository
-git clone <repo-url>
+git clone https://github.com/abdalrahmanelmallah/ecommerce-api.git
 
 # 2. Move into the project folder
 cd ecommerce-api
