@@ -22,9 +22,11 @@ const categorySchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-// Auto-generate a URL-friendly slug from the name before saving
-categorySchema.pre("save", function (next) {
-  if (this.isModified("name")) {
+// Auto-generate a URL-friendly slug from the name before validating/saving.
+// Using "validate" (not "save") ensures this also runs for Model.insertMany(),
+// which triggers validation but skips "save" middleware.
+categorySchema.pre("validate", function (next) {
+  if (this.isModified("name") || !this.slug) {
     this.slug = this.name
       .toLowerCase()
       .trim()
