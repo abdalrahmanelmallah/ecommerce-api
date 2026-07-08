@@ -138,3 +138,8 @@ Import the collection and environment from the `/postman` folder into Postman:
 2. `postman/ECommerce-API-Dev.postman_environment.json`
 
 Select the **E-Commerce API Dev** environment, then run requests in order (Categories → Products → Cart → Orders) — the collection automatically captures `categoryId`, `productId`, and `orderId` into environment variables as you go.
+
+echo "" >> README.md
+echo "## Order Status Values" >> README.md
+echo "" >> README.md
+echo "Valid order statuses: \`pending\`, \`confirmed\`, \`shipped\`, \`delivered\`, \`cancelled\`." >> README.md
